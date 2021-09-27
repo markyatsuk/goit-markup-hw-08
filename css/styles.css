@@ -30,12 +30,14 @@ body{
 img{
     display: block;
     max-width: 100%;
-    max-height: auto;
+    height: auto;
 }
 a{
     text-decoration: none;
 }
-
+#current-page{
+    color: var(--accent-color);
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
