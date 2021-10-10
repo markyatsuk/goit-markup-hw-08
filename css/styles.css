@@ -674,3 +674,52 @@ footer{
 .join-link:focus {
     background-color: var(--accent-color);
 }
+
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: 0;
+}
+
+.backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+.modal{
+    width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-btn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.modal-icon{
+    width: 11px;
+    height: 11px;
+}
