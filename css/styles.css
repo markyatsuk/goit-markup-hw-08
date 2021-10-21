@@ -453,13 +453,11 @@ a{
 .regular-clients-link:hover .client-icon,
 .regular-clients-link:focus .client-icon{
     fill: var(--accent-color);
-    
 }
 
-.regular-clients-link:hover .regular-clients-link,
-.regular-clients-link:focus .regular-clients-link{
+.regular-clients-link:hover,
+.regular-clients-link:focus{
     border-color: var(--accent-color);
-    
 }
 
 /* <!--PORTFOLIO BUTTONS--> */
@@ -515,11 +513,6 @@ a{
 .portfolio-main-images-list-item:not(:nth-child(3n)){
     margin-right: 30px;
 }
-.main-images-list-link:hover,
-.main-images-list-link:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    
-}
 
 .portfolio-main-images-list-item{
     flex-basis: calc((100% - 60px) / 3);
@@ -558,11 +551,6 @@ a{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-images-list-link:hover .main-images-text,
-.main-images-list-link:focus .main-images-text{
-    transform: translateY(0);
-}
-
 .portfolio-main-title{
     font-weight: 700;
     font-size: 18px;
@@ -578,6 +566,17 @@ a{
     color: var(--text-color);
 }
 
+.main-images-list-link:hover .main-images-text,
+.main-images-list-link:focus .main-images-text{
+    transform: translateY(0);
+}
+
+.main-images-list-link:hover,
+.main-images-list-link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 /* <!--FOOTER--> */
 
 footer{
@@ -592,6 +591,7 @@ footer{
 
 .address{
     margin-right: 70px;
+    flex-grow: 1;
 }
 
 .logo-span-footer{
@@ -712,9 +712,10 @@ footer{
    height: 50px;
    position: relative; 
    display: flex;
-   align-items: center;
    justify-content: center;
+   align-items: center;
    margin-left: 12px;
+   float: right;
 }
 
 .mailing-icon{
@@ -829,6 +830,8 @@ footer{
     position: absolute;
     left: 15px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal-input:focus + .input-icon{
@@ -856,7 +859,6 @@ footer{
     width: 100%;
     height: 120px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 10px;
 }  
 
 .modal-text-input:focus{
