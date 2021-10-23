@@ -1,0 +1,30 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.editor.enablePreview": true,
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "workbench.colorTheme": "Panda Syntax",
+    "files.autoSave": "onFocusChange",
+    
+        "liveSassCompile.settings.formats": [
+          {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+          },
+          {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+          }
+        ],
+        "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+        "liveSassCompile.settings.generateMap": true,
+        "liveServer.settings.port": 1235,
+        "liveSassCompile.settings.autoprefix": null
+      
+}
+
+    
