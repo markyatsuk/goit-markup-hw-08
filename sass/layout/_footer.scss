@@ -12,61 +12,55 @@ footer{
 .address{
     flex-grow: 1;
     margin-right: 70px;
-    flex-grow: 1;
 }
 
-.logo-span-footer{
+.footer__address{
+    margin-top: 20px;
+}
+
+.footer__logo__span{
     color: #fff;
     
 }
 
-.logo-footer{
+.footer__logo{
     font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
+    @include fonts(26px, 31px, 700);
     color: #2196F3;
 }
 
-.footer-address{
-    margin-top: 20px;
-}
 
-.footer-list-item{
+.footer__list-item{
     font-style: normal;
     &:not(:last-child){
         margin-bottom: 9px;
     }    
 }
 
-
-.footer-address{
+.footer__address-link{
     color: var(--primary-title-color);
-    font-size: 14px;
-    line-height: 24px;
+    @include fonts(14px, 24px);
 }
 
-.footer-contacts{
-    font-size: 14px;
-    line-height: calc(24/14);
+.footer__contacts-link{
+    @include fonts(14px, 24px);
     color: rgba(255, 255, 255, 0.6);
 }
 
-.join-title{
-    font-weight: 700;
+
+.join__title{
+    @include fonts(14px, 16px, 700);
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: calc(16/14);
     color: var(--primary-title-color);
     margin-bottom: 20px;
 }
 
-.join-list{
+.join__list{
     display: flex;
     justify-content: center;
 }
 
-.join-list-item{
+.join__item{
     width: 44px;
     height: 44px;
     & + &{
@@ -74,22 +68,21 @@ footer{
     }
 }
 
-.join-link{
+.join__link{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
+    @include align-item();
     justify-content: center;
     background-color:  rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-    background-color: var(--accent-color);
-}
+        background-color: var(--accent-color);
+    }
 }
 
-.join-svg{
+.join__svg{
     width: 20px;
     height: 20px;
     fill: #fff;
@@ -107,20 +100,16 @@ footer{
 .inputs{
     display: flex;
     justify-content: center;
-    
-    
 }
 
-.folow-mailing{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: calc(16/14);
+.footer__form__title{
+    @include fonts(14px, 16px, 700);
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
 
-.footer-input{
+.footer__form__input{
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,18 +123,17 @@ footer{
     }
 }
 
-.footer-mailing-btn{
+.footer__form__btn{
    width: 200px;
    height: 50px;
    position: relative; 
-   display: flex;
+   @include align-item();
    justify-content: center;
-   align-items: center;
    margin-left: 12px;
    float: right;
 }
 
-.mailing-icon{
+.footer__form__icon{
     width: 24px;
     height: 24px;
     fill: #ffffff;

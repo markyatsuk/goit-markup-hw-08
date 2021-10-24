@@ -4,53 +4,43 @@ header{
 
 .logo{
     font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
+    @include fonts(26px, 31px, 700);
     color: #2196F3;
     margin-right: 93px;
 }
 
-.logo-span-header{
+.logo__span{
     color: #000;
 }
 
-.header-container{
-    display: flex;
-    align-items: center;
+.header__container{
+    @include align-item();
 }
 
-.header-navigation{
-    display: flex;
-    align-items: center;
+.header__navigation{
+    @include align-item();
 }
 
-.header-list{
-    display: flex;
-    align-items: center;
+.header__list{
+    @include align-item();
 }
 
-.header-list-item:not(:last-child){
+.header__list__item:not(:last-child){
     margin-right: 52px;
 }
 
 
-.header-link{
+.header__link{
     display: block;
     color: var(--title-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
+    @include fonts(14px, 16px, 500, 0.02em);
     padding: 32px 0;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
     &:hover,
     &:focus{
         color: var(--accent-color);
     }
-
 }
 
 .current::after{
@@ -65,19 +55,15 @@ header{
 }
 
 
-.header-contacts-list {
+.header__contacts-list {
     display: flex;
     margin-left: auto;
-    
 }
 
-.header-contacts{
-    display: flex;
-    align-items: center;
+.header__contacts{
+    @include align-item();
     color: var(--text-color);
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
+    @include fonts(14px, 16px, $fw:400, $ls:0.02em);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -85,22 +71,22 @@ header{
         color: var(--accent-color);
     }
 
-    &:hover .header-envelope,
-    &:focus .header-envelope{
+    &:hover .header__envelope,
+    &:focus .header__envelope{
         fill: var(--accent-color);
     }
 
-    &:hover .header-tel,
-    &:focus .header-tel{
+    &:hover .header__tel,
+    &:focus .header__tel{
         fill: var(--accent-color);
     }
 }
 
-.header-contacts-list-item:not(:last-child){
+.header__contacts-item:not(:last-child){
     margin-right: 50px;
 }
 
-.header-envelope{
+.header__envelope{
     margin-right: 10px;
     width: 16px;
     height: 12px;
@@ -108,7 +94,7 @@ header{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel{
+.header__tel{
     margin-right: 10px;
     width: 10px;
     height: 16px;

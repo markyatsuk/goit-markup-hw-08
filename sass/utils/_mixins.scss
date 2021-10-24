@@ -1,0 +1,11 @@
+@mixin fonts($fz, $lh, $fw:400, $ls:0.03em){
+    font-size: $fz;
+    line-height: $lh / $fz;
+    font-weight: $fw;
+    letter-spacing: $ls;
+}
+
+@mixin align-item() {
+    display: flex;
+    align-items: center;
+}

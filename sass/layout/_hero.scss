@@ -14,12 +14,9 @@
     text-align: center;
 }
 
-.title{
+.hero__title{
+    @include fonts(44px, 60px, 900, 0.06em);
     color: var(--primary-title-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
 }

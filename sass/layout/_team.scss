@@ -1,23 +1,19 @@
-
 .our-team-section{
     background-color:  #F5F4FA;
 }
 
-.our-team-title{
+.our-team__title{
     color: var(--title-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
+    @include fonts(36px, 42px, 700);
     text-align: center;
     margin-bottom: 50px;
 }
 
-.our-team-list{
+.our-team__list{
     display: flex;
 }
 
-
-.our-team-list-item{
+.our-team__item{
     flex-basis: calc((100% - 90px) / 4);
     background-color: #fff;
     border-radius: 4px;
@@ -28,33 +24,27 @@
     }
 }
 
-.our-team-padding{
+.our-team__padding{
     padding-bottom: 30px;
     padding-top: 30px;
-
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
-    
 }
 
-.our-team-list-item-img{
+.our-team__item__img{
     width: 100%;
 }
 
-.our-team-list-item-title{
+.our-team__item__title{
     color: var(--title-color);
-    font-weight: 500;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19/16);
+    @include fonts(16px, 19px, 500);
     margin-bottom: 10px;
     text-align: center;
 }
 
-.our-team-list-item-par{
-    font-size: 16px;
-    line-height: calc(19/16);
+.our-team__item__par{
+    @include fonts(16px, 19px);
     color: var(--text-color);
     text-align: center;
 }
