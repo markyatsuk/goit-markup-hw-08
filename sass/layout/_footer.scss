@@ -1,26 +1,24 @@
-
-footer{
+.footer{
     background-color: #2F303A;
     padding: 60px 0;
 }
 
-.footer-container{
+.container--row-position{
     display: flex;
     align-items: baseline;
 }
 
-.address{
+.address-container{
     flex-grow: 1;
     margin-right: 70px;
 }
 
-.footer__address{
+.address{
     margin-top: 20px;
 }
 
 .footer__logo__span{
     color: #fff;
-    
 }
 
 .footer__logo{
@@ -29,24 +27,21 @@ footer{
     color: #2196F3;
 }
 
-
-.footer__list-item{
+.address__item{
     font-style: normal;
     &:not(:last-child){
         margin-bottom: 9px;
     }    
 }
 
-.footer__address-link{
+.address__link{
     color: var(--primary-title-color);
     @include fonts(14px, 24px);
 }
 
-.footer__contacts-link{
-    @include fonts(14px, 24px);
+.address__contacts-link{
     color: rgba(255, 255, 255, 0.6);
 }
-
 
 .join__title{
     @include fonts(14px, 16px, 700);
@@ -55,61 +50,40 @@ footer{
     margin-bottom: 20px;
 }
 
-.join__list{
+.join{
     display: flex;
     justify-content: center;
 }
 
 .join__item{
-    width: 44px;
-    height: 44px;
-    & + &{
-        margin-left: 10px;
-    }
+    @extend %social-item;
 }
 
 .join__link{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    @include align-item();
-    justify-content: center;
+    @extend %social-link;
     background-color:  rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-    }
 }
 
-.join__svg{
+.join__icon{
     width: 20px;
     height: 20px;
     fill: #fff;
 }
 
-
-
-.mailing-footer{
+.mailing-container{
     width: 570px;
     height: 86px;
-    margin-left: 93px;
-    
+    margin-left: 93px;  
 }
 
-.inputs{
-    display: flex;
-    justify-content: center;
-}
-
-.footer__form__title{
+.mailing-form__title{
     @include fonts(14px, 16px, 700);
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
 
-.footer__form__input{
+.mailing-form__input{
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -123,7 +97,7 @@ footer{
     }
 }
 
-.footer__form__btn{
+.mailing-form__btn{
    width: 200px;
    height: 50px;
    position: relative; 
@@ -133,7 +107,7 @@ footer{
    float: right;
 }
 
-.footer__form__icon{
+.mailing-form__icon{
     width: 24px;
     height: 24px;
     fill: #ffffff;

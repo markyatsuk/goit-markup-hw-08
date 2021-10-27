@@ -1,9 +1,8 @@
-
-.pros-container__list{
+.features{
     display: flex; 
 }
 
-.pros-container__item{
+.features__item{
     flex-basis: calc((100% - 90px) /4 );
 
     &:not(:last-child){
@@ -11,7 +10,7 @@
     }
 }
 
-.pros-container__item__svg-container{
+.features__svg-container{
     width: 270px;
     height: 120px;
     background-color: var(--btn-color);
@@ -21,19 +20,19 @@
     justify-content: center; 
 }
 
-.pros-container__item__svg{
+.features__icon{
     width: 70px;
     height: 70px;
 }
 
-.pros-container__item__title{
+.features__title{
     @include fonts(14px, 16px, 700);
     text-transform: uppercase;
     color: var(--title-color);
     margin-bottom: 10px;
 }
 
-.pros-container__item__paragraph{
+.features__text{
     @include fonts(14px, 24px);
     color: var(--text-color);
 }

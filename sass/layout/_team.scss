@@ -1,15 +1,8 @@
-.our-team-section{
+.section--other-background{
     background-color:  #F5F4FA;
 }
 
-.our-team__title{
-    color: var(--title-color);
-    @include fonts(36px, 42px, 700);
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.our-team__list{
+.our-team{
     display: flex;
 }
 
@@ -32,18 +25,18 @@
     border-right: 1px solid #EEEEEE;
 }
 
-.our-team__item__img{
+.our-team__img{
     width: 100%;
 }
 
-.our-team__item__title{
+.our-team__title{
     color: var(--title-color);
     @include fonts(16px, 19px, 500);
     margin-bottom: 10px;
     text-align: center;
 }
 
-.our-team__item__par{
+.our-team__text{
     @include fonts(16px, 19px);
     color: var(--text-color);
     text-align: center;

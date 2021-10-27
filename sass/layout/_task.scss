@@ -1,23 +1,22 @@
-
-.our-task__title{
-    @include fonts(36px, 42px, 700);
-    text-align: center;
-    margin-bottom: 50px;
+.section--no-padding-top{
+    padding-top: 0;
 }
 
-.our-task__list{
+.our-task{
     display: flex;
 }
 
-.our-task__item:not(:last-child){
+.our-task__item{
+    &:not(:last-child){
     margin-right: 30px;
+    }
 }
 
 .our-task__container{
     position: relative; 
 }
 
-.our-task__img-title{
+.our-task__title{
     @include fonts(14px, 16px, 700);
     text-transform: uppercase;
     color: var(--primary-title-color);
@@ -28,8 +27,4 @@
     height: 70px;
     @include align-item();
     justify-content: center;
-}
-
-.task-section{
-    padding-top: 0;
 }
