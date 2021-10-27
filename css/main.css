@@ -415,13 +415,13 @@ body {
   margin-bottom: 12px;
 }
 
-.modal__field {
+.field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal__input-label {
+.field__label {
   font-size: 12px;
   line-height: 1.16667;
   font-weight: 400;
@@ -431,7 +431,7 @@ body {
   cursor: pointer;
 }
 
-.modal__input {
+.field__input {
   width: 100%;
   height: 40px;
   outline: none;
@@ -442,31 +442,29 @@ body {
   cursor: pointer;
 }
 
-.modal__input:focus {
+.field__input:focus {
   border: 1px solid #2196F3;
 }
 
-.modal__input:focus + .modal__input-icon {
+.field__input:focus + .field__icon {
   fill: var(--accent-color);
 }
 
-.modal__input-icon {
+.field__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.modal__input-wrapper {
+.field__input-wrapper {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.modal__text-input {
+.field__text-input {
   font-size: 12px;
   line-height: 1.16667;
   font-weight: 400;
@@ -480,7 +478,7 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__text-input:focus {
+.field__text-input:focus {
   border: 1px solid #2196F3;
   outline: none;
 }
@@ -509,7 +507,7 @@ body {
   justify-content: center;
 }
 
-.modal__check-text__condition-link {
+.modal__condition-link {
   color: var(--accent-color);
   text-decoration: underline;
   display: block;
@@ -524,7 +522,7 @@ body {
   border: none;
 }
 
-.modal__btn {
+.modal-btn {
   width: 200px;
   height: 50px;
   display: block;
@@ -731,17 +729,17 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn__list {
+.nav-buttons {
   display: flex;
   margin-bottom: 56px;
   justify-content: center;
 }
 
-.btn__item:not(:last-child) {
+.nav-buttons__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.btn__item__btn {
+.nav-buttons__btn {
   font-size: 16px;
   line-height: 1.625;
   font-weight: 500;
@@ -756,64 +754,61 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn__item__btn:hover, .btn__item__btn:focus {
+.nav-buttons__btn:hover, .nav-buttons__btn:focus {
   color: var(--primary-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-main-images__list {
+.cards {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-main-images__link {
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-main-images__link:hover .portfolio-main-images__text,
-.portfolio-main-images__link:focus .portfolio-main-images__text {
-  transform: translateY(0);
-}
-
-.portfolio-main-images__link:hover, .portfolio-main-images__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-main-images__wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-main-images__item {
+.cards__item {
   flex-basis: calc((100% - 60px) / 3);
   margin-bottom: 30px;
 }
 
-.portfolio-main-images__item:not(:nth-child(3n)) {
+.cards__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.portfolio-main-images__item:nth-last-child(-n + 3) {
+.cards__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.portfolio-main-images__padding {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+.cards__link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards__link:hover .cards__text,
+.cards__link:focus .cards__text {
+  transform: translateY(0);
+}
+
+.cards__link:hover, .cards__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cards-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards__padding {
+  padding: 20px 24px;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
 }
 
-.portfolio-main-images__img {
+.cards__img {
   width: 100%;
 }
 
-.portfolio-main-images__text {
+.cards__text {
   font-size: 18px;
   line-height: 1.55556;
   font-weight: 400;
@@ -828,7 +823,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-main-images__title {
+.cards__title {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
@@ -837,7 +832,7 @@ body {
   margin-bottom: 4px;
 }
 
-.portfolio-main-images__paragraph {
+.cards__paragraph {
   font-size: 16px;
   line-height: 1.875;
   font-weight: 400;

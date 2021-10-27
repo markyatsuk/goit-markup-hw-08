@@ -57,20 +57,20 @@
     margin-bottom: 12px;
 }
 
-.modal__field{
+.field{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.modal__input-label{
+.field__label{
     @include fonts(12px, 14px, 400, 0.01em);
     color: #757575;
     margin-bottom: 4px;
     cursor: pointer;
 }
 
-.modal__input{
+.field__input{
     width: 100%;
     height: 40px;
     outline: none;
@@ -82,28 +82,25 @@
     &:focus{
         border: 1px solid #2196F3;
     }
-    &:focus + .modal__input-icon{
+    &:focus + .field__icon{
         fill: var(--accent-color);
     }
 }
 
-.modal__input-icon{
+.field__icon{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-.modal__input-wrapper{
+.field__input-wrapper{
     @include align-item();
     position: relative;
 }
 
-
-.modal__text-input{
+.field__text-input{
     @include fonts(12px, 14px, $fw:400, $ls:0.01em);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -136,7 +133,7 @@
     }
 }
 
-.modal__check-text__condition-link{
+.modal__condition-link{
     color: var(--accent-color);
     text-decoration: underline;
     display: block; 
@@ -154,7 +151,7 @@
     }
 }
 
-.modal__btn{
+.modal-btn{
     width: 200px;
     height: 50px;
     display: block;

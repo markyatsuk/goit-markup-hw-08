@@ -1,15 +1,16 @@
-
-.btn__list{  
+.nav-buttons{  
     display: flex;
     margin-bottom: 56px;
     justify-content: center;
 }
 
-.btn__item:not(:last-child){
+.nav-buttons__item{
+    &:not(:last-child){
     margin-right: 8px;
+    }
 }
 
-.btn__item__btn{
+.nav-buttons__btn{
     @include fonts(16px, 26px, 500);
     font-family: "Roboto", sans-serif;
     background-color: var(--btn-color);
