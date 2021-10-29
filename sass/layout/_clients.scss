@@ -1,20 +1,20 @@
-.regular-clients-container__title{
-    text-align: center;
-    @include fonts(36px, 42px, 700, $ls:0.01em);
-    color: var(--title-color);
-    margin-bottom: 50px;
-}
-
 .clients{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .clients__item{
+    flex-basis: calc((100% - 30px) / 2);
     width: 170px;
     height: 92px;
-    & + &{
+    margin-bottom: 30px; 
+    &:nth-child(2n){
         margin-left: 30px;
     }
+    &:nth-last-child(-n + 3){
+        margin-bottom: 0;
+    }
+
 }
 
 .clients__link{

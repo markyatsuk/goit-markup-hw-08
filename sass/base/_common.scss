@@ -6,7 +6,7 @@ body{
 }
 
 .section__title{
-    @include fonts(36px, 42px, 700);
+    @include fonts(28px, 33px, 700);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
