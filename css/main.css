@@ -127,15 +127,39 @@
 }
 
 .hero {
-  width: 100%;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  }
+}
+
 .hero .hero-container--padding {
-  padding: 118px 60px;
+  padding: 118px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-container--padding {
+    padding: 118px 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero .hero-container--padding {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
@@ -146,6 +170,15 @@
   color: var(--primary-title-color);
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1600px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36364;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
 }
 
 :root {
@@ -193,6 +226,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1600px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -211,8 +250,32 @@ body {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
+}
+
 .section {
   padding: 60px 0;
+}
+
+@media screen and (min-width: 1600px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .btn {
@@ -553,12 +616,41 @@ body {
   fill: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .features__item {
   width: 100%;
 }
 
 .features__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .features__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .features__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .features__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .features__svg-container {
@@ -586,6 +678,12 @@ body {
   color: var(--title-color);
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 
 .features__text {
@@ -633,6 +731,13 @@ body {
   background-color: #F5F4FA;
 }
 
+@media screen and (min-width: 768px) {
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .our-team__item {
   width: 100%;
   background-color: #fff;
@@ -642,6 +747,28 @@ body {
 
 .our-team__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .our-team__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .our-team__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .our-team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .our-team__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .our-team__padding {
@@ -682,7 +809,7 @@ body {
 
 .clients__item {
   flex-basis: calc((100% - 30px) / 2);
-  width: 170px;
+  width: 100%;
   height: 92px;
   margin-bottom: 30px;
 }
@@ -691,8 +818,33 @@ body {
   margin-left: 30px;
 }
 
-.clients__item:nth-last-child(-n + 3) {
+.clients__item:nth-last-child(-n + 2) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .clients__item:nth-child(2n) {
+    margin-left: 0;
+  }
+  .clients__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .clients__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .clients__item {
+    flex-basis: calc((100% - 300px) / 6);
+    margin-bottom: 0;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {

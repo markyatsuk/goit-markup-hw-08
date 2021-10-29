@@ -2,12 +2,15 @@
     background-color:  #F5F4FA;
 }
 
-// .our-team{
-     // display: flex;
-// }
+.our-team{
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+     
+}
 
 .our-team__item{
-    // flex-basis: calc((100% - 90px) / 4);
     width: 100%;
     background-color: #fff;
     border-radius: 4px;
@@ -15,9 +18,27 @@
     &:not(:last-child){
         margin-bottom: 30px;
     }
-    // &:not(:last-child){
-    //     margin-right: 30px;
-    // }
+
+    @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 30px) / 2);
+        &:nth-child(odd){
+                margin-right: 30px;
+            }
+            &:nth-last-child(-n + 2){
+                margin-bottom: 0;
+            }
+            
+    }
+
+    @media screen and (min-width: 1600px){
+        flex-basis: calc((100% - 90px) / 4);
+        
+        &:not(:last-child){
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+        
+    }
 }
 
 .our-team__padding{
