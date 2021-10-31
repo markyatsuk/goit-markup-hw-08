@@ -265,6 +265,8 @@ body {
 @media screen and (min-width: 1600px) {
   .container {
     width: 1600px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
@@ -303,7 +305,6 @@ body {
 }
 
 .address-container {
-  flex-grow: 1;
   margin-right: 70px;
 }
 
@@ -356,7 +357,6 @@ body {
 
 .join {
   display: flex;
-  justify-content: center;
 }
 
 .join__link {
@@ -437,13 +437,19 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 40px;
+}
+
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__close-btn {
@@ -474,12 +480,21 @@ body {
 
 .modal__title {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1600px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
 }
 
 .field {
@@ -551,8 +566,8 @@ body {
 }
 
 .modal__check-text {
-  font-size: 14px;
-  line-height: 1.71429;
+  font-size: 12px;
+  line-height: 1.16667;
   font-weight: 400;
   letter-spacing: 0.03em;
   display: flex;
@@ -561,6 +576,15 @@ body {
   cursor: pointer;
   justify-content: center;
   position: relative;
+}
+
+@media screen and (min-width: 1600px) {
+  .modal__check-text {
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal__check-text span {
@@ -822,7 +846,7 @@ body {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .clients__item {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -839,8 +863,11 @@ body {
 
 @media screen and (min-width: 1600px) {
   .clients__item {
-    flex-basis: calc((100% - 300px) / 6);
+    flex-basis: calc((100% - 150px) / 6);
     margin-bottom: 0;
+  }
+  .clients__item:nth-child(2n) {
+    margin-left: 0;
   }
   .clients__item:not(:last-child) {
     margin-right: 30px;
@@ -877,12 +904,35 @@ body {
 
 .nav-buttons {
   display: flex;
-  margin-bottom: 56px;
-  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-buttons {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .nav-buttons {
+    margin-bottom: 50px;
+  }
 }
 
 .nav-buttons__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.nav-buttons__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-buttons__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0;
+  }
 }
 
 .nav-buttons__btn {
@@ -906,22 +956,46 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .cards__item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+}
+
+.cards__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.cards__item:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .cards__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .cards__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .cards__item:nth-child(1) .cards__padding {
+    padding-bottom: 56px;
+  }
 }
 
-.cards__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 1600px) {
+  .cards__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .cards__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .cards__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 .cards__link {

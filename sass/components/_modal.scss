@@ -15,13 +15,17 @@
 }
 
 .modal{
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     position: relative;
     padding: 40px;
+
+    @media screen and (min-width: 1600px){
+        width: 528px;
+    }
 }
 
 .modal__close-btn{
@@ -51,7 +55,10 @@
 }
 
 .modal__title{
-    @include fonts(20px, 23px, 700);
+    @include fonts(20px, 30px, 700);
+    @media screen and (min-width: 1600px){
+        @include fonts(20px, 23px, 700);
+    }
     text-align: center;
     color: var(--title-color);
     margin-bottom: 12px;
@@ -116,7 +123,12 @@
 }  
 
 .modal__check-text{
-    @include fonts(14px, 24px);
+
+    @include fonts(12px, 14px);
+    @media screen and (min-width: 1600px){
+        @include fonts(14px, 24px);
+    }
+    
     @include align-item();
     color: #757575;
     cursor: pointer;
