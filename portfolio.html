@@ -20,7 +20,7 @@
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
-                <!-- <ul class="contacts">
+                <ul class="contacts">
                     <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts__link"> 
                         <svg class="contacts__icon" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope"></use>
@@ -33,7 +33,60 @@
                         </svg>
                         +38 096 111 11 11</a>
                     </li>
-            </ul> -->
+            </ul>
+            
+            <button class="menu-open-btn">
+            <svg class="menu-open-btn__icon">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+        </div>
+      <div class="backdrop is-hidden">
+        <div class="mob-menu">
+          <ul class="mob-nav">
+            <li class="mob-nav__item">
+              <a href="" class="mob-nav__link">Студия</a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="./portfolio.html" class="mob-nav__link">Портфолио</a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="" class="mob-nav__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu-bottom">
+           <ul class="menu-contacts">
+                <li class="menu-contacts__item">
+                <a href="" class="menu-contacts__phone contacts__link">+38 096 111 11 11</a>
+                </li>
+                <li class="menu-contacts__item">
+                <a href="" class="menu-contacts__mail contacts__link">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mob-social">
+                <li class="mob-social__item mob-social__item--after">
+                <a href="" class="mob-social__link">Instagram</a>
+                </li>
+                <li class="mob-social__item mob-social__item--after">
+                <a href="" class="mob-social__link ">Twitter</a>
+                </li>
+                <li class="mob-social__item mob-social__item--after">
+                <a href="" class="mob-social__link">Facebook</a>
+                </li>
+                <li class="mob-social__item">
+                <a href="" class="mob-social__link">LinkedIn</a>
+                </li>
+            </ul>
+           </div>
+        </div>
+
+        <button type="button" class="close-button" >
+          <svg class="close-button__icon">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        </div>
+      </div>
         </div>
     </header>
 
@@ -183,7 +236,7 @@
                 
     </main>
     <footer class="footer">
-        <div class="container container--row-position">
+        <div class="container container--column-row-position">
             <div class="address-container">
                 <a href="./index.html" class="footer__logo">Web<span class="footer__logo__span">Studio</span></a>
                 <address> 
@@ -194,7 +247,7 @@
                     </ul>
                 </address>
             </div>
-            <div>
+            <div class="join-container">
                 <h3 class="join__title">присоединяйтесь</h3>
                 <ul class="join">
                     <li class="join__item">
@@ -246,5 +299,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

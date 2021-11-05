@@ -1,3 +1,9 @@
+.section-task{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .section--no-padding-top{
     padding-top: 0;
 }

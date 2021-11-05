@@ -1,15 +1,23 @@
 .footer{
     background-color: #2F303A;
     padding: 60px 0;
+    height: auto;
 }
 
-.container--row-position{
+.container--column-row-position{
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    
+    // align-items: baseline;
 }
 
 .address-container{
-    margin-right: 70px;
+    
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px){
+        margin-right: 70px;
+    }
 }
 
 .address{
@@ -18,12 +26,14 @@
 
 .footer__logo__span{
     color: #fff;
+
 }
 
 .footer__logo{
     font-family: "Raleway";
     @include fonts(26px, 31px, 700);
     color: #2196F3;
+    text-align: center;
 }
 
 .address__item{
@@ -40,6 +50,11 @@
 
 .address__contacts-link{
     color: rgba(255, 255, 255, 0.6);
+}
+
+.join-container{
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .join__title{
@@ -71,7 +86,10 @@
 .mailing-container{
     width: 570px;
     height: 86px;
-    margin-left: 93px;  
+    margin-top: 60px;
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;  
+    }
 }
 
 .mailing-form__title{
@@ -101,8 +119,9 @@
    position: relative; 
    @include align-item();
    justify-content: center;
-   margin-left: 12px;
-   float: right;
+//    margin-left: 12px;
+   margin-top: 20px;
+   
 }
 
 .mailing-form__icon{
