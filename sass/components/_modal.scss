@@ -23,7 +23,7 @@
     position: relative;
     padding: 40px;
 
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
         width: 528px;
     }
 }
@@ -56,7 +56,7 @@
 
 .modal__title{
     @include fonts(20px, 30px, 700);
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
         @include fonts(20px, 23px, 700);
     }
     text-align: center;
@@ -125,7 +125,7 @@
 .modal__check-text{
 
     @include fonts(12px, 14px);
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
         @include fonts(14px, 24px);
     }
     

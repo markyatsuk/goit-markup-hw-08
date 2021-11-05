@@ -140,24 +140,18 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
 }
 
-.hero .hero-container--padding {
+.hero-container--padding {
   padding: 118px 0;
 }
 
-@media screen and (min-width: 768px) {
-  .hero .hero-container--padding {
-    padding: 118px 0;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .hero .hero-container--padding {
+@media screen and (min-width: 1200px) {
+  .hero-container--padding {
     padding: 200px 0;
   }
 }
@@ -172,7 +166,7 @@
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36364;
@@ -226,7 +220,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
   }
@@ -262,7 +256,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1600px;
     padding-left: 215px;
@@ -274,7 +268,7 @@ body {
   padding: 60px 0;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
@@ -446,7 +440,7 @@ body {
   padding: 40px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
   }
@@ -488,7 +482,7 @@ body {
   margin-bottom: 12px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal__title {
     font-size: 20px;
     line-height: 1.15;
@@ -578,7 +572,7 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal__check-text {
     font-size: 14px;
     line-height: 1.71429;
@@ -667,7 +661,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .features__item {
     flex-basis: calc((100% - 90px) / 4);
   }
@@ -785,7 +779,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .our-team__item {
     flex-basis: calc((100% - 90px) / 4);
   }
@@ -846,7 +840,7 @@ body {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -861,7 +855,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__item {
     flex-basis: calc((100% - 150px) / 6);
     margin-bottom: 0;
@@ -915,7 +909,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .nav-buttons {
     margin-bottom: 50px;
   }
@@ -971,7 +965,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .cards__item {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -986,7 +980,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .cards__item {
     flex-basis: calc((100% - 60px) / 3);
   }

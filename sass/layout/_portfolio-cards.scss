@@ -11,7 +11,7 @@
     &:not(:last-child){
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1599px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         flex-basis: calc((100% - 30px) / 2); 
         &:not(:nth-child(2n)){
             margin-right: 30px;
@@ -23,7 +23,7 @@
             padding-bottom: 56px;
         }
     }
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
         flex-basis: calc((100% - 60px) / 3);
         &:not(:nth-child(3n)){
             margin-right: 30px;
