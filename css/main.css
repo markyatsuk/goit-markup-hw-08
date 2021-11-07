@@ -516,6 +516,7 @@ body {
 
 .container--column-row-position {
   padding: 60px 15px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -534,7 +535,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container--column-row-position {
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: baseline;
     justify-content: start;
   }
@@ -626,7 +626,6 @@ body {
 
 .mailing-container {
   width: 100%;
-  margin: 0 auto;
   margin-top: 60px;
 }
 
@@ -640,7 +639,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .mailing-container {
-    margin-left: 93px;
+    width: auto;
+    margin-left: auto;
     display: flex;
     margin-top: 0;
   }
