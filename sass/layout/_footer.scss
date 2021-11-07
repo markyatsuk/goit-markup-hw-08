@@ -18,8 +18,8 @@
         flex-direction: row;
         // padding: 60px 215px;
         flex-wrap: nowrap;
-    // align-items: baseline;
-    // justify-content: start;
+        align-items: baseline;
+        justify-content: start;
     }
 }
 
@@ -28,12 +28,13 @@
     
     @media screen and (min-width: 1200px){
         margin-right: 70px;
+        text-align: start;
     }
 }
 
 .address{
     margin-top: 20px;
-    
+    flex-grow: 1;
 }
 
 .footer__logo__span{
