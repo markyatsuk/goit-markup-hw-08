@@ -439,6 +439,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: start;
+  }
+}
+
 .address__item {
   font-style: normal;
 }

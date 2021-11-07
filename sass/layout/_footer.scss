@@ -50,6 +50,9 @@
     @include fonts(26px, 31px, 700);
     color: #2196F3;
     text-align: center;
+    @media screen and (min-width: 1200px){
+        text-align: start;
+    }
 }
 
 .address__item{
